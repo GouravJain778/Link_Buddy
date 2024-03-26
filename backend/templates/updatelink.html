@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Link List</title>
+    <link rel="stylesheet" href="static/css/update.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+  
+      
+    <div class="first">
+      <h1>Update Link List</h1>
+
+
+
+      <div class="input-box">
+        <input type="text" id="id" placeholder="id"  value="{{ id }}">
+      </div>
+     
+
+      <div class="input-box">
+        <input type="text" placeholder="Name"  id="name" value="{{ name }}">
+      </div>
+
+      <div class="input-box">
+        <input type="text" id="description" placeholder="Description" name="description" value="{{ description }}">
+      </div class="input-box">
+
+      <div class="input-box">
+        <input type="url"  id="url" placeholder="Url"  value="{{ url }}">
+      </div>
+
+    
+
+        <button type="submit" id="update-btn">Update Link List</button>
+
+    </div>
+    <script src="{{ url_for('static', filename='js/update.js') }}"></script>
+
+</body>
+</html>

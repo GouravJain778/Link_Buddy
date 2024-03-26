@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/create.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Create a Link List</h1>
+       <div class="input-box">
+             <input type="text" placeholder="Name" id="name">
+        </div>
+       
+        <div class="input-box">
+            <input type="text" placeholder="Description" id="description">
+        </div>
+
+        <div class="input-box">
+            <input type="url" placeholder="Url" id="url">
+        </div>
+
+        <button type="button" class="btn-primary" id="create-btn">Create</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/create.js') }}"></script>
+
+</body>
+</html>
